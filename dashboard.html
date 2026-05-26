@@ -606,7 +606,7 @@ function buildState() {
 // ============================================================
 const fmtN = n => n?.toLocaleString("id-ID") ?? "—";
 const statusPill = s => {
-  const m = { "On track":"p-gr Selesai":"p-gr", "Perlu perhatian":"p-am", "Terlambat":"p-rd", "Selesai":"p-gr" };
+  const m = { "On track":"p-gr", "Selesai":"p-gr", "Perlu perhatian":"p-am", "Terlambat":"p-rd", "Selesai":"p-gr" };
   const cls = m[s] ?? "p-gy";
   return `<span class="pill ${cls}">${s}</span>`;
 };
